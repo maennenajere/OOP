@@ -5,6 +5,7 @@
 
 using namespace std;
 
+<<<<<<< HEAD
 float keskiarvo(void) {
     float taulukko[5] = {1.0, 2.0, 3.0, 4.0, 5.0};
     float ka = 0.0;
@@ -14,6 +15,13 @@ float keskiarvo(void) {
     }
     ka = ka / 5.0;
     return ka;
+=======
+int main()
+{
+    cout << "Hello World TVT23SPO!" << endl;
+    cout << "Muuttunut" << endl;
+    return 0;
+>>>>>>> cab8874ab53e32e7bb1b066da1e69b8f9c89ac4a
 }
 
 int main()
