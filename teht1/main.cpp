@@ -21,5 +21,17 @@ int main()
 
     cin >> guess;
     cout << "Your number was: " << num << endl;
+
+    srand(time(NULL));
+    int satluku = rand() % 40;
+    cout << satluku << endl;
+    satluku = rand() % 40;
+    cout << satluku << endl;
+    satluku = rand() % 40;
+    cout << satluku << endl;
+    satluku = rand() % 40;
+    cout << satluku << endl;
+    satluku = rand() % 40;
+    cout << satluku << endl;
     return 0;
 }
