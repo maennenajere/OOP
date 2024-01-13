@@ -13,25 +13,38 @@ using namespace std;
 
 int main()
 {
+    //variables
     int num, guess;
-    srand(time(0));
-    num = rand() % 69 + 1;
 
-    cout << "Guess the number\n\n";
-
-    cin >> guess;
-    cout << "Your number was: " << num << endl;
-
+    //number generator
     srand(time(NULL));
-    int satluku = rand() % 40;
-    cout << satluku << endl;
-    satluku = rand() % 40;
-    cout << satluku << endl;
-    satluku = rand() % 40;
-    cout << satluku << endl;
-    satluku = rand() % 40;
-    cout << satluku << endl;
-    satluku = rand() % 40;
-    cout << satluku << endl;
+
+    //target
+    num = rand() % 20 + 1;
+
+
+    //repeat until number correct
+    do {
+       //get guess
+       cout << "Guess the number between 1-20: ";
+       cin >> guess;
+
+       //check the user guess
+    if (guess > num) {
+           cout << "The number is lower! Try again." << endl;
+    } else if (guess < num) {
+           cout << "The number is higher! Try again." << endl;
+       } else {
+           cout << "Correct answer! :-)" << endl;
+           break;
+       }
+
+       //check if guess is too high
+       if (guess > 20) {
+           cout << "Remember the range 1-20!" << endl;
+       }
+
+    }   while (true);
+
     return 0;
 }
