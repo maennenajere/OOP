@@ -1,2 +1,5 @@
-*/build/
-*/*.user
+# Ignore all build directories
+**/build/
+
+# Ignore all .user files
+**/*.user
