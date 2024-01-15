@@ -25,24 +25,24 @@ int main()
 
     //repeat until number correct
     do {
-       //get guess
-       cout << "Guess the number between 1-20: ";
-       cin >> guess;
+        //get guess
+        cout << "Guess the number between 1-20: ";
+        cin >> guess;
 
-       //check the user guess
-    if (guess > num) {
-           cout << "The number is lower! Try again." << endl;
-    } else if (guess < num) {
-           cout << "The number is higher! Try again." << endl;
-       } else {
-           cout << "Correct answer! :-)" << endl;
-           break;
-       }
+        //check the user guess
+        if (guess > num) {
+            cout << "The number is lower! Try again." << endl;
+        } else if (guess < num) {
+            cout << "The number is higher! Try again." << endl;
+        } else {
+            cout << "Correct answer! :-)" << endl;
+            break;
+        }
 
-       //check if guess is too high
-       if (guess > 20) {
-           cout << "Remember the range 1-20!" << endl;
-       }
+        //check if guess is too high
+        if (guess > 20) {
+            cout << "Remember the range 1-20!" << endl;
+        }
 
     }   while (true);
 

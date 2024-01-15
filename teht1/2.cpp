@@ -30,8 +30,7 @@ void guess_number() {
         cin >> guess;
 
         //check the user guess
-        if (guess > num) {
-            cout << "The number is lower! Try again." << endl;
+        if (guess > num) { cout << "The number is lower! Try again." << endl;
         } else if (guess < num) {
             cout << "The number is higher! Try again." << endl;
         } else {
