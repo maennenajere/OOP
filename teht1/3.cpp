@@ -14,6 +14,8 @@
 #include <ctime>
 #include <cstdlib>
 
+using namespace std;
+
 int game(int maxnum) {
 
     //variables
@@ -28,22 +30,22 @@ int game(int maxnum) {
     //repeat until number correct
     do {
         //get guess
-        std::cout << "Guess the number between 1-" << maxnum << ": ";
-        std::cin >> guess;
+        cout << "Guess the number between 1-" << maxnum << ": ";
+        cin >> guess;
 
         //check user guess
         if (guess > num) {
-            std::cout << "The number is lower! Try again." << std::endl;
+            cout << "The number is lower! Try again." << endl;
         } else if (guess < num) {
-            std::cout << "The number is higher! Try again." << std::endl;
+            cout << "The number is higher! Try again." << endl;
         } else {
-            std::cout << "Correct answer! :-)" << std::endl;
+            cout << "Correct answer! :-)" << endl;
             break;
         }
 
         //check guess in range
         if (guess > maxnum) {
-            std::cout << "Remember the range 1-" << maxnum << "!" << std::endl;
+            cout << "Remember the range 1-" << maxnum << "!" << endl;
         }
 
         //guesses count
@@ -55,14 +57,16 @@ int game(int maxnum) {
 }
 
 int main() {
-    //set maximum number for the game
-    int maxNumber = 40;
+    //set maxNumber
+    int maxNumber;
+    cout << "Enter the maximum number: ";
+    cin >> maxNumber;
 
-    //call the game function
+    //call function
     int totalGuesses = game(maxNumber);
 
     //display total guesses
-    std::cout << "Total guesses: " << totalGuesses << std::endl;
+    cout << "Total guesses: " << totalGuesses << endl;
 
     return 0;
 }
