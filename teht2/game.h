@@ -10,13 +10,16 @@ private:
     int playerGuess;
     int randomNumber;
     int numOfGuesses;
+
     void printGameResult();
+
+
 
 public:
 
     Game(int);
     ~Game();
-    void play;
+    void play();
 
 };
 
