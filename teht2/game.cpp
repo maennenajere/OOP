@@ -36,7 +36,7 @@ void Game::Game() {
 
 void Game::printGameResult() {
     cout << "Your quess is right = "<< randomNumber << endl;
-    cout << "You quessed the right answer = "<< randomNumber << ". with " << numOfGuesses << " quesses" << endl;
+    cout << "You quessed the right answer = "<< randomNumber << ". with " << numOfGuesses << " quesses." << endl;
 }
 
 
@@ -64,12 +64,13 @@ void Game::printGameResult() {
     cin >> maxNumber; */
 
 void Game::play() {
+    do
+    cout << "Enter the maximum number: ";
+    cin >> maxNumber;
 
     /*cout << "Numero: ";
     cin >> playerGuess;
     numOfGuesses++;*/
-
-
 
     if (playerGuess == randomNumber) {
         printGameResult();
@@ -82,7 +83,9 @@ void Game::play() {
 
     } else {
         cout << "Your guess is too small" << endl;
-    }
+    } while (true);
+
+
 
     void Game::~Game() {
         cout << "GAME DESTRUCTOR: Object cleared from stack memory" << endl;
