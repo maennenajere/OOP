@@ -1,26 +1,17 @@
 #ifndef GAME_H
 #define GAME_H
-#include <iostream>
 
 class Game {
 
 private:
-
-    int maxNumber;
-    int playerGuess;
-    int randomNumber;
-    int numOfGuesses;
-
-    void printGameResult();
-
-
+    int maxNumber, playerGuess, randomNumber, numOfGuesses;
 
 public:
+    Game(int max);          // constructor
+    ~Game();                // destructor
 
-    Game(int);
-    ~Game();
-    void play();
-
+    void play();            // method to play the game
+    void printGameResult(); // method to print gameresults
 };
 
-#endif // GAME_H
+#endif

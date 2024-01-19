@@ -1,95 +1,54 @@
-  /*  1. Luokan konstruktori tulostaa maksimiarvon jonka käyttäjä antoi
-    2. Play metodi tulostaa peliä pelattaessa mille välille arvaus pitää antaa sekä arvauksen jälkeen osuiko vaiko eikö.
-    3. printGameResult metodi tulostaa yhteenvedon eli mikä oli oikea vastaus ja kuinka monta arvausta siihen tarviitiin (vihje: play metodin täytyy kutsua printGameResult metodia)
-    4. Ja lopuksi, kun Game objekti tuhotaan tulostuu destruktorin viesti.*/
+  /* 1.The class constructor prints the maximum value given by the user
+   * 2. The play method prints out the interval to be guessed when the game is played and whether or not the guess is a hit or miss.
+   * 3. printGameResult method prints a summary, i.e. what was the correct answer and how many guesses were needed
+   * (hint: the play method must call the printGameResult method)
+   * 4. And finally, when the Game object is destroyed, the destructor message is printed.
+*/
 
-
-#include "game.h"
+#include "Game.h"
 #include <iostream>
-#include <ctime>
 #include <cstdlib>
-
+#include <ctime>
 
 using namespace std;
 
-Game::Game(int) {
-    /*int game(int maxnum) {
-
-        //variables
-        int num, guess, guesses = 0;
-    */
-    //numbergenerator
-    srand(time(NULL));
-
-    //target
+// constructor
+Game::Game(int max) : maxNumber(max), playerGuess(0), randomNumber(0), numOfGuesses(0) {
+    srand(time(0));
     randomNumber = rand() % maxNumber + 1;
-
-
-}
-
-void Game::Game() {
-    //get guess
-    cout << "Guess the number between 1-" << maxNumber << ": ";
-    cin >> playerGuess;
+    cout << "GAME CONSTRUCTOR: object initialized with " << maxNumber << " as a maximum value" << endl;
 }
 
 
-void Game::printGameResult() {
-    cout << "Your quess is right = "<< randomNumber << endl;
-    cout << "You quessed the right answer = "<< randomNumber << ". with " << numOfGuesses << " quesses." << endl;
+// destructor
+Game::~Game() {
+    cout << "GAME DESTRUCTOR: object cleared from stack memory" << endl;
 }
 
-
-/*  do {
-        //get guess
-        cout << "Guess the number between 1-" << maxnum << ": ";
-        cin >> guess;
-
-        //check user guess
-        if (guess > num) {
-            cout << "The number is lower! Try again." << endl;
-        } else if (guess < num) {
-            cout << "The number is higher! Try again." << endl;
-        } else {
-            cout << "Correct answer! :-)" << endl;
-            break;
-        }
-
-        //guesses count
-        guesses++;
-    } while (true);
-
-    //set maxNumber
-    cout << "Enter the maximum number: ";
-    cin >> maxNumber; */
-
+// gameplay
 void Game::play() {
-    do
-    cout << "Enter the maximum number: ";
-    cin >> maxNumber;
+    bool stayInLoop = true;
 
-    /*cout << "Numero: ";
-    cin >> playerGuess;
-    numOfGuesses++;*/
+    while (stayInLoop) {
+        cout << "Give your guess between 1-" << maxNumber << endl;
+        cin >> playerGuess;
+        numOfGuesses++;
 
-    if (playerGuess == randomNumber) {
-        printGameResult();
-        return;
-
-    } else if (playerGuess > randomNumber) {
-        cout << "Your guess is too big" << endl;
-        playerGuess();
-        return;
-
-    } else {
-        cout << "Your guess is too small" << endl;
-    } while (true);
-
-
-
-    void Game::~Game() {
-        cout << "GAME DESTRUCTOR: Object cleared from stack memory" << endl;
-        printGameResult();
+        if (playerGuess == randomNumber) {
+            cout << "Your guess is right = " << playerGuess << endl;
+            stayInLoop = false;
+        } else if (playerGuess < randomNumber) {
+            cout << "Your guess is too small" << endl;
+        } else {
+            cout << "Your guess is too big" << endl;
+        }
     }
+
+    printGameResult();
+}
+
+// print gameresults
+void Game::printGameResult() {
+    cout << "You guessed the right answer = " << randomNumber << " with " << numOfGuesses << " guesses" << endl;
 }
 

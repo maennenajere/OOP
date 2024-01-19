@@ -16,10 +16,7 @@
 
 #include "Game.h"
 
-using namespace std;
-
-int main()
-{
+int main() {
     Game gameObject(10);
     gameObject.play();
     return 0;
