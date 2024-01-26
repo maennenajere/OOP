@@ -22,7 +22,7 @@ public:
     }
 };
 
-class Father {
+class Father: public GrandFather {
 public:
     string Fathername;
 
@@ -44,7 +44,7 @@ public:
 };
 
 
-class Son:public Father, public GrandFather {
+class Son:public Father {
 public:
     string name;
 
