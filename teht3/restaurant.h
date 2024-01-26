@@ -1,10 +1,30 @@
 #ifndef RESTAURANT_H
 #define RESTAURANT_H
+#include <iostream>
 
-class restaurant
+using namespace std;
+
+class Chef
+{
+
+protected:
+    string name;
+
+public:
+    string Chef;
+    void makeSalad();
+    void makeSoup();
+
+};
+
+
+class ItalianChef:public Chef
 {
 public:
-    restaurant();
+    ItalianChef(string);
+    string getName();
+    void makePasta();
+
 };
 
 #endif // RESTAURANT_H
