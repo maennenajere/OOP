@@ -1,18 +1,16 @@
 #include <iostream>
-#include <chef.h>
-#include <italianchef.h>
+#include "chef.h"
+#include "italianchef.h"
 
 using namespace std;
 
-int main()
-{
-    Chef.chef("Gordon ramsay");
-    chef.makeSalad();
-    chef.makesoup();
+int main() {
+    Chef jyrki("Jyrki");
+    ItalianChef mario("Mario", 250, 100);
 
-
-    ItalianChef chef2("Anthony Bourdain");
-    chef2.makePasta();
+    jyrki.makeSalad();
+    mario.makePasta();
+    jyrki.makeSoup();
 
     return 0;
 }

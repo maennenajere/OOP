@@ -1,23 +1,21 @@
 #ifndef CHEF_H
 #define CHEF_H
+
 #include <iostream>
 
 using namespace std;
 
-}
-
 class Chef {
-
 public:
     Chef(string n);
-    string Chef;
-    void makeSalad(void);
+    ~Chef();
+    void makeSalad();
     void makeSoup();
+    void makePasta();
+    string getName();
 
 protected:
     string name;
 };
-
-~Chef();
 
 #endif // CHEF_H
