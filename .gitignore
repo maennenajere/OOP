@@ -3,3 +3,6 @@
 
 # Ignore all .user files
 **/*.user
+
+# Ignore Visual Studio Code settings
+.vscode/
