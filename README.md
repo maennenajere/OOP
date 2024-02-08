@@ -1,4 +1,4 @@
-
+![Alt](https://repobeats.axiom.co/api/embed/07b27165af111039ce160da6bfb13b60e337c3c7.svg "Repobeats analytics image")
 # OOP - Study Repository
 
 This repository is dedicated to my academic journey in Object-Oriented Programming (OOP). It contains assignments, projects, and exercises related to my coursework in C++.
