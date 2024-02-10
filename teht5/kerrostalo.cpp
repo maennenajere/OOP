@@ -7,8 +7,8 @@ Kerrostalo::Kerrostalo() {
     toka = new Kerros();
     eka = new Katutaso();
     kolmas = new Kerros();
-    cout << "Kerrostalo rakennettu" << endl;
-    cout << "Maaritellaan koko kerrostalon kaikki asunnot" << endl;
+    cout << "Kerrostalo rakennettu!" << endl;
+    cout << "Maaritellaan koko kerrostalon kaikki asunnot!" << endl;
 }
 
 Kerrostalo::~Kerrostalo() {

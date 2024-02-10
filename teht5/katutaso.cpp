@@ -4,7 +4,7 @@
 using namespace std;
 
 Katutaso::Katutaso() {
-    cout << "Katutaso rakennettu" << endl;
+    cout << "Katutaso rakennettu!" << endl;
     as1 = new Asunto();
     as2 = new Asunto();
 }
@@ -16,7 +16,7 @@ Katutaso::~Katutaso() {
 
 
 void Katutaso::maaritaAsunnot() {
-    cout << "Maaritellaan 2 kpl katutason asuntoja" << endl;
+    cout << "Maaritellaan 2 kpl katutason asuntoja!" << endl;
     as1->maarita(2, 100);
     as2->maarita(2, 100);
 }

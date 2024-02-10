@@ -8,7 +8,7 @@ int main() {
     kerrostalo->maaritaKaikkiAsunnot();
 
     double kokonaiskulutus = kerrostalo->laskeKulutus(2800.00);
-    cout << "Kerrostalon kokonaiskulutus: " << kokonaiskulutus << endl;
+    cout << "Kerrostalon kokonaiskulutus: " << kokonaiskulutus << " kWh." << endl;
 
     delete kerrostalo;
     return 0;
