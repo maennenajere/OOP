@@ -1,9 +1,10 @@
+#include "mydeviceui.h"
 #include <iostream>
 
 using namespace std;
 
 int main()
 {
-    cout << "inheritance coming soon!" << endl;
+    MyDeviceUI().uiShowMenu();
     return 0;
-}
+};
