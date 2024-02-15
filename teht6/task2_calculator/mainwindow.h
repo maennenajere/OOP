@@ -17,7 +17,22 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void numberClickedHandler();
+    void clearAndEnterClickedHandler();
+    void addSubMulDivClickedHandler();
+    void resetLineEdits();
+    void on_num1_textChanged(const QString);
+    void on_num2_textChanged(const QString);
+    void on_result_textChanged(const QString);
+
 private:
     Ui::MainWindow *ui;
+    QString num1, num2;
+    int state;
+    short operand;
+    float result;
+
+    void resetCalculator();
 };
 #endif // MAINWINDOW_H
