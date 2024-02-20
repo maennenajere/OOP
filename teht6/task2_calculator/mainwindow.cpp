@@ -34,8 +34,6 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->num1, &QLineEdit::textChanged, this, &MainWindow::on_num1_textChanged);
     connect(ui->num2, &QLineEdit::textChanged, this, &MainWindow::on_num2_textChanged);
     connect(ui->result, &QLineEdit::textChanged, this, &MainWindow::on_result_textChanged);
-
-
 }
 
 MainWindow::~MainWindow() {
@@ -108,7 +106,6 @@ void MainWindow::on_result_textChanged(const QString)
 {
     result = ui->result->text().toFloat();
 }
-
 
 void MainWindow::enterClickedHandler() {
     float n1 = num1.toFloat();

@@ -12,7 +12,6 @@ MainWindow::MainWindow(QWidget *parent)
     QObject::connect(ui->iGotYou, &QCheckBox::stateChanged, []() {
         std::terminate();
     });
-
 }
 
 MainWindow::~MainWindow()
@@ -34,12 +33,10 @@ void MainWindow::on_resetButton_clicked()
     ui->resultBox->setText(QString::number(count));
 }
 
-
 void MainWindow::on_resultBox_returnPressed()
 {
     qDebug() << "+1";
 }
-
 
 void MainWindow::on_iGotYou_stateChanged(int arg1)
 {
