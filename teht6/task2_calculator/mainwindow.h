@@ -21,6 +21,7 @@ private slots:
     void numberClickedHandler();
     void clearAndEnterClickedHandler();
     void addSubMulDivClickedHandler();
+    void enterClickedHandler();
     void resetLineEdits();
     void on_num1_textChanged(const QString);
     void on_num2_textChanged(const QString);
