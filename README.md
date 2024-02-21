@@ -5,12 +5,11 @@ This repository is dedicated to my academic journey in Object-Oriented Programmi
 
 ## Purpose
 
-The main aim of this repository is to organize and document my learning materials, assignments, and projects in Object-Oriented Programming. It's a central hub for my academic progress, enabling collaboration with peers and demonstrating the skills and knowledge I've acquired in OOP.
+The main aim of this repository is to organize and document my learning materials, assignments, and projects in Object-Oriented Programming. It's a central hub for my academic progress, and demonstrating the skills and knowledge I've acquired in OOP.
 
 ## Folder Structure
 
-- Each programming language has its own dedicated folder.
-- Within these language folders, there are subfolders for specific topics and tasks.
+- Within these folders, there are subfolders for specific topics and tasks.
 - Regular updates will be made to this repository as I complete new exercises, assignments, and projects.
 
 ## Usage
