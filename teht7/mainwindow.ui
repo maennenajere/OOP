@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QProgressBar" name="progressBar">
+   <widget class="QProgressBar" name="player1progressBar">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -33,7 +33,7 @@
      <number>24</number>
     </property>
    </widget>
-   <widget class="QProgressBar" name="progressBar_2">
+   <widget class="QProgressBar" name="player2progressBar">
     <property name="geometry">
      <rect>
       <x>630</x>
@@ -52,7 +52,7 @@
      <number>24</number>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="player1Button">
     <property name="geometry">
      <rect>
       <x>60</x>
@@ -72,7 +72,7 @@
      <string>Switch player</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="player2Button">
     <property name="geometry">
      <rect>
       <x>670</x>
@@ -93,7 +93,7 @@
      <string>Switch player</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_3">
+   <widget class="QPushButton" name="shortGame">
     <property name="geometry">
      <rect>
       <x>260</x>
@@ -106,7 +106,7 @@
      <string>120 sec</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_4">
+   <widget class="QPushButton" name="longGame">
     <property name="geometry">
      <rect>
       <x>430</x>
@@ -119,12 +119,12 @@
      <string>5 min</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="startGameButton">
+   <widget class="QPushButton" name="startButton">
     <property name="geometry">
      <rect>
-      <x>270</x>
+      <x>260</x>
       <y>390</y>
-      <width>91</width>
+      <width>101</width>
       <height>31</height>
      </rect>
     </property>
@@ -132,12 +132,12 @@
      <string>START GAME</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="stopGameButton">
+   <widget class="QPushButton" name="stopButton">
     <property name="geometry">
      <rect>
       <x>430</x>
       <y>390</y>
-      <width>91</width>
+      <width>101</width>
       <height>31</height>
      </rect>
     </property>
@@ -177,6 +177,14 @@
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
+ <tabstops>
+  <tabstop>player1Button</tabstop>
+  <tabstop>player2Button</tabstop>
+  <tabstop>shortGame</tabstop>
+  <tabstop>longGame</tabstop>
+  <tabstop>startButton</tabstop>
+  <tabstop>stopButton</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>
