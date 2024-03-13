@@ -18,4 +18,6 @@ This repository is open for browsing and educational reference. It primarily foc
 
 ## Contributions
 
-I welcome any constructive feedback, suggestions, or contributions to improve the repository's content. If you have ideas or insights that can enhance the learning experience, please feel free to reach out. Your collaboration is highly valued!
+If you have any feedback, suggestions, or improvements related to the content, please don't hesitate to get in touch!
+
+**NOTE: This repository will no longer receive updates.**
